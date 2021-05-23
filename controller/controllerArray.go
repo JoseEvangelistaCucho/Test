@@ -15,7 +15,7 @@ func EntitiesArray(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, e.Error(), http.StatusUnprocessableEntity)
 		return
 	}
-	//defer r.Body.Close()
+	defer r.Body.Close()
 	array1 := array.Rotate9()
 	json.NewEncoder(w).Encode(array1)
 }
