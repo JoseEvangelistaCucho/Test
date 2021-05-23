@@ -16,6 +16,6 @@ func EntitiesArray(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	defer r.Body.Close()
-	array1 := array.Rotate9()
-	json.NewEncoder(w).Encode(array1)
+	DatosArray := array.Rotate9()
+	json.NewEncoder(w).Encode(DatosArray)
 }
