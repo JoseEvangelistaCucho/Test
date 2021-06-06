@@ -13,6 +13,7 @@ func (c *ArrayEntities) Rotate9() (r Response) {
 	var m = c.Valor1
 	var n int = len(m)
 
+	//Recorre  los datos ingresados
 	for i := range m {
 		var TamArray int = len(m[i])
 
