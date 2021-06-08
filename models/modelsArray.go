@@ -1,15 +1,15 @@
 package models
 
 type ArrayNum struct {
-	Valor1 [][]int `json:"valor1"`
+	NumList [][]int `json:"numList"`
 }
 
 type Response struct {
-	Code     int         `json:"code"`
-	Message  string      `json:"string"`
-	Response interface{} `json:"interface,omitempty"`
+	ErrorCode int         `json:"errorCode"`
+	Message   string      `json:"message"`
+	Response  interface{} `json:"interface,omitempty"`
 }
 
 type ResponseVista struct {
-	ArrayVista [][]int `json:"arrayVista"`
+	ArrayView [][]int `json:"arrayView"`
 }
