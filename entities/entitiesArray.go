@@ -29,6 +29,7 @@ func (c *ArrayEntities) Rotate9() (response Response) {
 				response.Message = "Cantidad de Arrays Mayor que Digitos (Verifique lo Digitado ejemp [[1,2],[3,4]])"
 				return response
 			}
+
 			response.ErrorCode = 2
 			response.Message = "Fatal Error"
 			return response
