@@ -23,7 +23,7 @@ func CORS(next http.Handler) http.Handler {
 		next.ServeHTTP(w, r)
 	})
 }
-
+//
 func main() {
 	router := mux.NewRouter()
 	router.Handle("/api/v1/PostArray", http.HandlerFunc(controller.EntitiesArray)).Methods("POST")
