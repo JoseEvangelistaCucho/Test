@@ -6,6 +6,8 @@ import (
 	"path/filepath"
 )
 
+//
+
 type SpaHandler struct {
 	StaticPath string
 	IndexPath  string
